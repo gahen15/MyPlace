@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'OnePiece';
+    src:
+        url('../Font/one\ piece\ font.ttf') format('truetype');
+    /* Para navegadores que suportam TTF */
+    font-weight: 900;
+    /* ou 'bold' se for uma fonte em negrito */
+    font-style: normal;
+    /* ou 'italic' se for uma fonte em itálico */
+
+}
+
+
 /* Normalização dos elementos para todo mundo */
 * {
     margin: 0;
@@ -7,7 +20,7 @@
 }
 
 /*variável - root = pseudo class - define o escopo da variável - root é de global*/
-:root{
+:root {
     --color-light: #ffffff;
     --color-dark: #000000;
     --color-fiap: #dc143c;
@@ -15,33 +28,111 @@
 }
 
 /*tira a bolinha ou o número da lista*/
-ul, ol {
+ul,
+ol {
     list-style: none;
-    
+
+
 }
 
 /* Muda o */
-a{
+a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 100;
     transition: var(--transition);
+    color: var(--color-light);
+    font-size: 1.5vw;
 }
 
 /* Troca a cor do texto toda vez que o ponteiro passar */
-a:hover{
+a:hover {
     color: var(--color-fiap)
 }
-image{https://images.alphacoders.com/136/thumb-1920-1362973.png}
 
-.header-page { 
+.container {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .3)), url('../images/one_piece_ship_4k_wallpaper_by_cyberxyt_dgctbqh-pre.jpg');
+    color: var(--color-light);
+    background-size: cover;
+    background-position: 50%;
+
+}
+
+.header-page {
     width: 100%;
     height: 100px;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     padding: 0 20px;
 }
+
 .header-menu ol {
     display: flex;
     gap: 20px;
 }
+
+.logo {
+    color: var(--color-light);
+    font-family: 'OnePiece', sans-serif;
+    font-size: 4vw;
+}
+
+.hero {
+
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero h2 {
+    font-size: 4vw;
+
+}
+
+.hero h3 {
+    font-size: 2vw;
+}
+
+.button {
+    border: 2px solid var(--color-fiap);
+    padding: 8px 30px;
+    background-color: var(--color-fiap);
+    border-radius: 70px;
+    transition: background-color var(--transition);
+}
+
+.button:hover {
+    background-color: transparent;
+}
+
+.cards {
+    width: 90%;
+    min-height: 100vh;
+    margin: 2px auto;
+    padding: 50 0;
+
+
+}
+
+.cards h2 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.fundo {
+    background-repeat: no-repeat;
+    background-image: url(../images/fundno2.jpg);
+    background-size: cover;
+}
+
+
+
+.card-iten {}
