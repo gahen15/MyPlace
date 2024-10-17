@@ -112,29 +112,54 @@ a:hover {
 .button:hover {
     background-color: transparent;
 }
-
+.fundo{background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/freepik__vintage-parchment-paper-texture-with-subtle-grunge__47493.jpeg);
+    }
 .cards {
     width: 90%;
     min-height: 100vh;
-    margin: 2px auto;
+    margin: 0px auto;
     padding: 50 0;
 
 
 }
 
-.cards p{font-size: 1.5vw}
+.cards p{
+    font-size: 1.5vw}
 .cards h2 {
     font-size: 3vw;
+    color: var(--color-light);
+    text-align: center;;
 }
 
 .cards-list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin: 50px 0;
 }
 .card-iten{
-width: 45%;
+width: 40%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 15px;
+box-shadow: 1px 1px 30px #464141;
+padding: 40px;
+border-radius: 7px;
+transition: scale var(--transition);
 }
 .card-iten img{
     width: 80%;
+  
 }
+.card-iten p{
+    width: 75%;
+}
+.card-iten:hover{
+    cursor: pointer;
+scale: 1.05;}
