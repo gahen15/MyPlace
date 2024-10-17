@@ -41,7 +41,7 @@ a {
     font-weight: 100;
     transition: var(--transition);
     color: var(--color-light);
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 /* Troca a cor do texto toda vez que o ponteiro passar */
@@ -122,17 +122,19 @@ a:hover {
 
 }
 
+.cards p{font-size: 1.5vw}
 .cards h2 {
     font-size: 3vw;
-    text-align: center;
 }
 
-.fundo {
-    background-repeat: no-repeat;
-    background-image: url(../images/fundno2.jpg);
-    background-size: cover;
+.cards-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
-
-
-
-.card-iten {}
+.card-iten{
+width: 45%;
+}
+.card-iten img{
+    width: 80%;
+}
