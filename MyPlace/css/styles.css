@@ -148,7 +148,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 gap: 15px;
-box-shadow: 1px 1px 30px #464141;
+box-shadow: 1px 1px 30px #ab3f3f;
 padding: 40px;
 border-radius: 7px;
 transition: scale var(--transition);
@@ -163,3 +163,11 @@ transition: scale var(--transition);
 .card-iten:hover{
     cursor: pointer;
 scale: 1.05;}
+
+/* básico do responsivo */
+@media(width <=900px){
+
+    .card-iten{ width: 90%;}
+
+
+}
